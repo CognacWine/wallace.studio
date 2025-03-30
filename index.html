@@ -1,114 +1,215 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PGZH8HT");
+    </script>
+    <!-- End Google Tag Manager -->
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
+    <!-- Materialize - Compiled and minified CSS-->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"
+    />
+    <!-- Font Awesome Icon - CSS-->
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>wallace.studio | where things happen</title>
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>wallace.studio | where things happen</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "UA-126939217-2");
+    </script>
 
-    gtag('config', 'UA-126939217-2');
-  </script>
+    <!-- Open Graph-->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Product Design" />
+    <meta property="og:description" content="Product design" />
+    <meta property="og:url" content="https://wallace.studio" />
 
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Product Design" />
-  <meta property="og:description" content="Product design" />
-  <meta property="og:url" content="https://wallace.studio" />
+    <!-- Twitter -->
+    <meta
+      name="twitter:title"
+      content="Product Design | 3D Printing  | Artist "
+    />
+    <meta name="author" content="wallace.studio" />
+    <meta name="description" content="We bring product to life." />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/assets/img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/assets/img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/assets/img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/assets/img/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index, follow" />
+    <!-- Google Site Verification for indexing -->
+    <meta
+      name="google-site-verification"
+      content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84"
+    />
+  </head>
 
-  <!-- Twitter -->
-  <meta name="twitter:title" content="Product Design | 3D Printing  | Artist " />
-  <meta name="author" content="wallace.studio" />
-  <meta name="description" content="We bring product to life." />
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
-  <!-- Google Site Verification for indexing -->
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
-</head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
+    <!-- Navigation Menu-->
+    <!-- Nav class 1 -->
+    <nav class="hide-on-small-only">
+      <ul class="side-nav fixed section table-of-contents">
+        <li class="logo">
+          <a
+            id="logo-container"
+            aria-label="Navigate to the beginning of the page"
+            href="#intro"
+            class="brand-logo grey-blue-text"
+          >
+            <!--img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar"-->
+          </a>
+        </li>
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <!--img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar"-->
-        </a>
-      </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the About section"
+            href="#about"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-social-person small"></i><span>About</span></a
+          >
+        </li>
 
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-
-
-      <li class="bold">
-        <!-- mdi-av-web small
+        <li class="bold">
+          <!-- mdi-av-web small
              mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
+          <a
+            aria-label="Navigate to the Projects section"
+            href="#projects"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-av-my-library-books small"></i
+            ><span>Projects</span></a
+          >
+        </li>
 
-
-
-      <li class="bold">
-        <!-- 
+        <li class="bold">
+          <!-- 
         1. mdi-communication-contacts
         2. mdi-content-mail
         3. mdi-communication-email
         -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
+          <a
+            aria-label="Navigate to the Contact section"
+            href="#contact"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-content-mail small"></i><span>Contact</span></a
+          >
+        </li>
 
-      <li class="bold">
-        <!--
+        <li class="bold">
+          <!--
         ICONS:
         1. mdi-action-description
         2. mdi-file-folder
@@ -116,171 +217,263 @@
         4. mdi-file-attachment
         5. mdi-file-folder-shared
         -->
-        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
+          <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
           onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+        </li>
+      </ul>
+    </nav>
 
-      </li>
-    </ul>
-  </nav>
+    <!-- Nav class 2 -->
+    <nav class="hide-on-large only trigger z-depth-1">
+      <a
+        aria-label="Toggle visibility of the mobile navbar"
+        href="#"
+        data-activates="slide-out"
+        class="button-collapse"
+        ><i class="mdi-navigation-menu"></i
+      ></a>
+      <div class="name-title">
+        <a
+          id="name"
+          aria-label="Navigate to the beginning of the page"
+          href="#"
+          class="teal-text"
+          >wallace.studio</a
+        ><span class="black-text">Where Things Happen</span>
+      </div>
+    </nav>
 
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">wallace.studio</a><span class="black-text">Where Things Happen</span>
-    </div>
-  </nav>
+    <!-- Nav class 3 -->
+    <nav class="hide-on-large only">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold">
+          <a
+            aria-label="Navigate to the About section"
+            href="#about"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-social-person small"></i><span>About</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Projects section"
+            href="#projects"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-av-my-library-books small"></i
+            ><span>Projects</span></a
+          >
+        </li>
+        <li class="bold">
+          <a
+            aria-label="Navigate to the Contact section"
+            href="#contact"
+            class="waves-effect waves-dark teal-text"
+            ><i class="mdi-content-mail small"></i><span>Contact</span></a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>G'day, I'm <span class="teal">Wallace.</span></h2>
-              <h4 style="color:#ffffff">We do <span class="typing" style="font-weight: 300; color:#0b1a2b"></span></h4>
-              <!-- <h5 style="color:#0a0a11">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Here in wallace.studio we make things happen.</h5>
-              <p>
-                We specialize in designing, developing, and manufacturing products, with extensive experience in a wide range of advanced manufacturing techniques.
-              </p>
-              <p>
-                Our team can leverage this expertise to bring your project to life, delivering tailored solutions to meet your specific needs.
-              </p>
-            </div>
-            <div class="social">
-              <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
+    <!-- Main Content-->
+    <main>
+      <!-- First Section: Heading lines and image -->
+      <section id="intro" class="section scrollspy full-height">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="col-md-9">
+            <div
+              class="content section-padding valign"
+              style="margin-left: 10%; margin-top: 50px"
+            >
+              <div class="caption">
+                <h2>G'day, I'm <span class="teal">Wallace.</span></h2>
+                <h4 style="color: #ffffff">
+                  We do
+                  <span
+                    class="typing"
+                    style="font-weight: 300; color: #0b1a2b"
+                  ></span>
+                </h4>
+                <!-- <h5 style="color:#0a0a11">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+                <h5>Here in wallace.studio we make things happen.</h5>
+                <p>
+                  We specialize in designing, developing, and manufacturing
+                  products, with extensive experience in a wide range of
+                  advanced manufacturing techniques.
+                </p>
+                <p>
+                  Our team can leverage this expertise to bring your project to
+                  life, delivering tailored solutions to meet your specific
+                  needs.
+                </p>
+              </div>
+              <div class="social">
+                <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
                 <button class="icon-btn angellist">
                   <i class="fa fa-angellist"></i>
                 </button>
               </a> -->
 
-              <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
+                <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
 
                   </span>
               </a> -->
-            </div>
-            <div class='buttons'>
-              <a href="#contact" class="contactme">Get In Touch</a>
+              </div>
+              <div class="buttons">
+                <a href="#contact" class="contactme">Get In Touch</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-
-
-    <!-- Third Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-          <!-- 1. ETOH Lures -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Fishing Lures @ ETOH Lures<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Injection moulded fishing lures made with ABS
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Processes:</b> Prototyping, CNC machining, ABS injection molding</li>
-                  <li>In-house design, development, and testing of custom fishing lures.</li>
-                  <li>Rapid prototyping, product testing, and iterative development.</li>
-                  <li>Manufacture of fishing lures in both small and large volumes.</li>
-
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://etohlures.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+      <!-- Third Section: Projects -->
+      <section id="projects" class="section scrollspy">
+        <h3 class="page-title white-text teal">Projects</h3>
+        <div class="container">
+          <div class="row">
+            <!-- 1. ETOH Lures -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="music streaming app"
+                    src="/assets/img/project-music-player.png"
+                    style="height: 100%; width: 100%"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline"
+                    >Fishing Lures @ ETOH Lures<i
+                      class="mdi-navigation-more-vert right"
+                    ></i
+                  ></span>
+                  <p>Injection moulded fishing lures made with ABS</p>
+                </div>
+                <div class="card-reveal">
+                  <!-- TODO: change this -- only close button -->
+                  <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                  <span class="card-title grey-text"
+                    ><small>Accomplishments</small
+                    ><i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>
+                      <b>Processes:</b> Prototyping, CNC machining, ABS
+                      injection molding
+                    </li>
+                    <li>
+                      In-house design, development, and testing of custom
+                      fishing lures.
+                    </li>
+                    <li>
+                      Rapid prototyping, product testing, and iterative
+                      development.
+                    </li>
+                    <li>
+                      Manufacture of fishing lures in both small and large
+                      volumes.
+                    </li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit "
+                      href="https://etohlures.com/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+                      ><i class="fa fa-external-link"></i
+                    ></a>
+                    <a
+                      aria-label="Visit the GitHub repo for  project"
+                      href="https://github.com/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- 1. Polarix -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Custom Marine Touchscreens @ Polarix<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  CNC Milled touchscreens for the challenging marine environment.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Processes:</b> CAD Modelling, Load simulations, CNC machining</li>
-                  <li>In house design, development and testing of industrial screens.</li>
-                  <li>Understanding challenges in real-world applications.</li>
-                  <li>Compliance testing of products for targeted use cases.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+            <!-- 1. Polarix -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="quiz app"
+                    src="/assets/img/project-quizup-logo-1.png"
+                    style="height: 100%; width: 100%"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline"
+                    >Custom Marine Touchscreens @ Polarix<i
+                      class="mdi-navigation-more-vert right"
+                    ></i
+                  ></span>
+                  <p>
+                    CNC Milled touchscreens for the challenging marine
+                    environment.
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <!-- TODO: change this -- only close button -->
+                  <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                  <span class="card-title grey-text"
+                    ><small>Accomplishments</small
+                    ><i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>
+                      <b>Processes:</b> CAD Modelling, Load simulations, CNC
+                      machining
+                    </li>
+                    <li>
+                      In house design, development and testing of industrial
+                      screens.
+                    </li>
+                    <li>
+                      Understanding challenges in real-world applications.
+                    </li>
+                    <li>
+                      Compliance testing of products for targeted use cases.
+                    </li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit "
+                      href="https://quiz-up-app.herokuapp.com/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+                      ><i class="fa fa-external-link"></i
+                    ></a>
+                    <a
+                      aria-label="Visit the GitHub repo for  project"
+                      href="https://github.com/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- 1. Django Project -->
-          <!-- <div class="col s12 m6 l6">
+            <!-- 1. Django Project -->
+            <!-- <div class="col s12 m6 l6">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
@@ -314,169 +507,245 @@
             </div>
           </div> -->
 
-          <!-- Phase Pole -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/project-blog-logo.jpg"
-                style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Phase Pole @ Phase Industries<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Innovative transducer mounting solution for modern live-view transducers.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Processes:</b> CAD modelling, Prototyping, 3D printing</li>
-                  <li>Designing end-use parts with complex geometries and components optimized for 3D printing.</li>
-                  <li>SLS Nylon 3D-printed end-use production parts, reducing tooling costs while ensuring durability.</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+            <!-- Phase Pole -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="Screenshot of web app"
+                    src="/assets/img/project-blog-logo.jpg"
+                    style="height: 100%; width: 100%"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline"
+                    >Phase Pole @ Phase Industries<i
+                      class="mdi-navigation-more-vert right"
+                    ></i
+                  ></span>
+                  <p>
+                    Innovative transducer mounting solution for modern live-view
+                    transducers.
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <!-- TODO: change this -- only close button -->
+                  <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                  <span class="card-title teal-text"
+                    ><small>Accomplishments</small
+                    ><i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>
+                      <b>Processes:</b> CAD modelling, Prototyping, 3D printing
+                    </li>
+                    <li>
+                      Designing end-use parts with complex geometries and
+                      components optimized for 3D printing.
+                    </li>
+                    <li>
+                      SLS Nylon 3D-printed end-use production parts, reducing
+                      tooling costs while ensuring durability.
+                    </li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit Blog website"
+                      href="https://flask-heroku-blog.herokuapp.com/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+                      ><i class="fa fa-external-link"></i
+                    ></a>
+                    <a
+                      aria-label="Visit the GitHub repo for  project"
+                      href="https://github.com/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Fish Sculpt -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/project-aim_bert-bias.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Fish Sculpt Project<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Creating sculptures of various fish species.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Iconic fishes with a mordern twist as sculptures</li>
-                  <li>Morphologically accurate sculptures for each species</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://fishsculpt.com/" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+            <!-- Fish Sculpt -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="Screenshot of  web app"
+                    src="/assets/img/project-aim_bert-bias.png"
+                    style="height: 100%; width: 100%"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline"
+                    >Fish Sculpt Project<i
+                      class="mdi-navigation-more-vert right"
+                    ></i
+                  ></span>
+                  <p>Creating sculptures of various fish species.</p>
+                </div>
+                <div class="card-reveal">
+                  <!-- TODO: change this -- only close button -->
+                  <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                  <span class="card-title teal-text"
+                    ><small>Accomplishments</small
+                    ><i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>Iconic fishes with a mordern twist as sculptures</li>
+                    <li>
+                      Morphologically accurate sculptures for each species
+                    </li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit the GitHub repo for  project"
+                      href="https://fishsculpt.com/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- 3D Cairns -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">3D Cairns<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  3D Printing, Scanning, CAD Drafting service in Cairns, Australia
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>3D printing, scanning and modelling on demand.</li>
-                  <li>Reverse engineering and remake obsolete parts.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://3dcairns.com" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+            <!-- 3D Cairns -->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="Screenshot of  web app"
+                    src="/assets/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg"
+                    style="height: 100%; width: 100%"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline"
+                    >3D Cairns<i class="mdi-navigation-more-vert right"></i
+                  ></span>
+                  <p>
+                    3D Printing, Scanning, CAD Drafting service in Cairns,
+                    Australia
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <!-- TODO: change this -- only close button -->
+                  <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                  <span class="card-title brown-text"
+                    ><small>Accomplishments</small
+                    ><i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>3D printing, scanning and modelling on demand.</li>
+                    <li>Reverse engineering and remake obsolete parts.</li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      aria-label="Visit the GitHub repo for  project"
+                      href="https://3dcairns.com"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- ************* -->
+            <!-- ************* -->
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
+      <!-- Eight Section: Contact -->
+      <section id="contact" class="section scrollspy full-height">
+        <h3 class="page-title white-text teal">Contact</h3>
+        <div class="container">
+          <p>
+            <a
+              aria-label="Email wallace.studio"
+              href="mailto:hello@wallace.studio"
+              target="_blank"
+              data-position="top"
+              data-tooltip="Email wallace.studio"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+              ><i class="fa fa-envelope"></i
+              ><a
+                aria-label="Email wallace.studio"
+                href="hello@wallace.studio"
+                class="hoverline"
+                >hello@wallace.studio</a
+              ></a
+            >
+          </p>
+          <p>
+            <a
+              aria-label="View GitHub"
+              href="http://github.com/"
+              target="_blank"
+              data-position="top"
+              data-tooltip="View GitHub"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+              ><i class="fa fa-github"></i
+              ><a
+                aria-label="Github"
+                href="http://github.com/"
+                class="hoverline"
+                target="_blank"
+                >github.com/</a
+              ></a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
 
-        <p>
-          <a aria-label="Email wallace.studio" href="mailto:hello@wallace.studio" target="_blank" data-position="top"
-            data-tooltip="Email wallace.studio" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email wallace.studio" href="hello@wallace.studio"
-              class="hoverline">hello@wallace.studio</a></a>
-        </p>
-        <p>
-          <a aria-label="View GitHub" href="http://github.com/" target="_blank"
-            data-position="top" data-tooltip="View GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Github" href="http://github.com/" class="hoverline"
-              target="_blank">github.com/</a></a>
-        </p>
+    <!-- typed.js -->
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed(".typing", {
+        strings: [
+          "Product design.",
+          "CNC Machining.",
+          "3D Printing.",
+          "Sculptures.",
+        ],
+        loop: true,
+        typeSpeed: 80,
+        backSpeed: 30,
+      });
+    </script>
 
-      </div>
-    </section>
-  </main>
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Product design.", "CNC Machining.", "3D Printing.", "Sculptures."],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 30
-    });
-  </script>
-
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
-</body>
-
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+      // Materialize - Initializers
+      $(document).ready(function () {
+        $(".scrollspy").scrollSpy();
+        // Initialize collapse button
+        $(".button-collapse").sideNav({
+          menuWidth: 190, // Default is 240
+          edge: "left", // Choose the horizontal origin
+          closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        });
+      });
+    </script>
+  </body>
 </html>
